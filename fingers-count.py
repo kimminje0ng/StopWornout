@@ -7,7 +7,6 @@ import numpy as np
 handDetector = HandDetector(min_detection_confidence=0.7)
 webcamFeed = cv2.VideoCapture(0)
 
-
 while True:
     status, image = webcamFeed.read()
     handLandmarks = handDetector.findHandLandMarks(image=image, draw=True)
